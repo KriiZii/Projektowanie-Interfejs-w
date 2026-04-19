@@ -1,0 +1,131 @@
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#top-bar {
+    background-color: white;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#links {
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#links a {
+    text-decoration: none;
+    color: grey;
+    margin-right: 15px;
+}
+
+#search-box {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#main-area {
+    width: 900px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+#headings h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+#headings p {
+    color: grey;
+    margin-top: 5px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.card-top {
+    height: 150px;
+    width: 100%;
+}
+
+.review-score {
+    background-color: white;
+    padding: 5px;
+    float: right;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.genre-tag {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    float: left;
+    margin-top: 110px;
+    margin-left: 10px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.info p {
+    font-size: 14px;
+    color: grey;
+}
+
+.bot-info {
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.dev-name {
+    color: grey;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.read-btn {
+    color: blue;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#bottom-footer {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
