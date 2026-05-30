@@ -45,20 +45,18 @@
 
                 <form action="javascript:void(0);">
                     <b style="font-size: 12px; color: grey;">YOUR NAME</b><br>
-                    <input type="text" placeholder="How should we credit your review?" style="width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 15px; font-size: 14px; margin-top: 5px; margin-bottom: 25px;">
+                    <input type="text" id="name-input" placeholder="How should we credit your review?" style="width: 100%; border: 1px solid #ddd; border-radius: 10px; padding: 15px; font-size: 14px; margin-top: 5px; margin-bottom: 25px; box-sizing: border-box;">
 
                     <b style="font-size: 12px; color: grey;">YOUR RATING</b><br>
-                    <div style="background-color: white; border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin-top: 5px; margin-bottom: 25px; width: 150px;">
-                        <span style="color: #fbbf24; font-size: 20px;">★★★★☆</span> <b style="margin-left: 10px; font-size: 14px;">8 / 10</b>
-                    </div>
+                    <div id="rating-selector" style="margin-top: 8px; margin-bottom: 25px;"></div>
 
                     <b style="font-size: 12px; color: grey;">YOUR REVIEW</b><br>
-                    <textarea placeholder="The digital architecture was breathtaking, but the combat mechanics felt..." style="width: 100%; height: 200px; border: 1px solid #ddd; border-radius: 10px; padding: 15px; font-size: 14px; margin-top: 5px; font-family: Arial;"></textarea>
+                    <textarea id="review-text" placeholder="The digital architecture was breathtaking, but the combat mechanics felt..." style="width: 100%; height: 200px; border: 1px solid #ddd; border-radius: 10px; padding: 15px; font-size: 14px; margin-top: 5px; font-family: Arial; box-sizing: border-box;"></textarea>
                     
                     <p style="color: grey; font-size: 10px; margin-top: 5px;">&#9432; Minimum 50 words recommended for an editorial highlight.</p>
 
                     <br><br>
-                    <button style="background-color: #2563eb; color: white; padding: 15px 30px; border: none; font-weight: bold; border-radius: 30px; font-size: 16px; cursor: pointer;">Submit Review</button>
+                    <button id="submit-btn" style="background-color: #2563eb; color: white; padding: 15px 30px; border: none; font-weight: bold; border-radius: 30px; font-size: 16px; cursor: pointer;">Submit Review</button>
                     <a href="gamepage.html" id="cancel-btn" style="color: blue; text-decoration: none; font-weight: bold; margin-left: 20px; padding: 15px 30px; border-radius: 30px; border: 1px solid #ddd; background-color: white;">Cancel</a>
                 </form>
             </div>
@@ -68,13 +66,21 @@
     <br><br>
     
     <div id="bottom-footer">
-        <div class="logo-text">GameReview</div>
-        <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
-        <br>
-        <a href="#">ABOUT US</a> | 
-        <a href="#">EDITORIAL POLICY</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">CONTACT</a>
+        <div id="footer-main">
+            <div id="footer-brand">
+                <div class="logo-text">GameReview</div>
+                <p>The world's leading destination for curated game reviews and honest editorial coverage.</p>
+            </div>
+            <nav id="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="editorial.html">Editorial Policy</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id="footer-bottom">
+            <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
+        </div>
     </div>
 
     <!-- js file -->

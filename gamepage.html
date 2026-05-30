@@ -41,30 +41,7 @@
 
                         <h2>User Reviews</h2>
                         <p style="font-size: 12px; color: grey;">Hear from the community in Aethelgard</p>
-                        
-                        <div style="border: 1px solid #eee; padding: 20px; margin-bottom: 20px; border-radius: 10px;">
-                            <div style="float: left; width: 40px; height: 40px; background-color: #e0eaff; color: blue; text-align: center; line-height: 40px; border-radius: 20px; font-weight: bold;">JD</div>
-                            <div style="float: left; margin-left: 15px;">
-                                <b style="font-size: 14px;">Junkyard_Droid</b><br>
-                                <span style="font-size: 10px; color: grey;">Reviewed on Nov 16, 2024</span>
-                            </div>
-                            <div style="float: right; background-color: #fffae6; color: #b8860b; padding: 10px; font-weight: bold; font-size: 18px; border-radius: 5px;">10</div>
-                            <div style="clear: both;"></div>
-                            <br>
-                            <p style="color: grey; font-size: 14px;">Great game with very satisfying combat.It gets even better the more you put your heart into it.The price is honestly amazing for a game of this quality-it could easily have cost more and still would have been worth buying.</p>
-                        </div>
-
-                        <div style="border: 1px solid #eee; padding: 20px; border-radius: 10px;">
-                            <div style="float: left; width: 40px; height: 40px; background-color: #e0eaff; color: blue; text-align: center; line-height: 40px; border-radius: 20px; font-weight: bold;">NS</div>
-                            <div style="float: left; margin-left: 15px;">
-                                <b style="font-size: 14px;">NeonShadow_99</b><br>
-                                <span style="font-size: 10px; color: grey;">Reviewed on Nov 15, 2024</span>
-                            </div>
-                            <div style="float: right; background-color: #fffae6; color: #b8860b; padding: 10px; font-weight: bold; font-size: 18px; border-radius: 5px;">8</div>
-                            <div style="clear: both;"></div>
-                            <br>
-                            <p style="color: grey; font-size: 14px;">Beautiful game , great storytelling , breathtaking visuals all in one package and runs on potatoes.</p>
-                        </div>
+                        <div id="user-reviews-list"></div>
                     </td>
 
                     <td width="35%" valign="top">
@@ -83,8 +60,8 @@
                                         <b style="font-size: 10px;">CRITIC SCORE</b>
                                     </td>
                                     <td width="60%">
-                                        <span style="color: orange; font-size: 20px;">★★★★★</span>
-                                        <p style="font-size: 10px; color: grey; margin-top: 5px;">Based on 124 curated reviews</p>
+                                        <span id="game-stars" style="color: orange; font-size: 20px;">★★★★★</span>
+                                        <p id="review-count" style="font-size: 10px; color: grey; margin-top: 5px;">Based on 0 reviews</p>
                                     </td>
                                 </tr>
                             </table>
@@ -146,13 +123,21 @@
     <br><br>
     
     <div id="bottom-footer">
-        <div class="logo-text">GameReview</div>
-        <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
-        <br>
-        <a href="#">ABOUT US</a> | 
-        <a href="#">EDITORIAL POLICY</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">CONTACT</a>
+        <div id="footer-main">
+            <div id="footer-brand">
+                <div class="logo-text">GameReview</div>
+                <p>The world's leading destination for curated game reviews and honest editorial coverage.</p>
+            </div>
+            <nav id="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="editorial.html">Editorial Policy</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id="footer-bottom">
+            <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
+        </div>
     </div>
 
     <!-- js file -->

@@ -37,6 +37,39 @@ body {
     float: right;
     margin-right: 20px;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#search-box input {
+    width: 220px;
+    padding: 7px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#search-box input:focus {
+    border-color: #2563eb;
+}
+
+#search-box button {
+    padding: 7px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#search-box button:hover {
+    background-color: #f3f4f6;
 }
 
 #main-area {
@@ -58,13 +91,14 @@ body {
 .card {
     background-color: white;
     width: 280px;
-    height: 400px;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     vertical-align: top;
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    overflow: hidden;
 }
 
 .card-top {
@@ -93,6 +127,7 @@ body {
 
 .info {
     padding: 15px;
+    flex: 1;
 }
 
 .info h3 {
@@ -125,7 +160,65 @@ body {
 
 #bottom-footer {
     background-color: white;
-    padding: 30px;
+    border-top: 1px solid #e5e7eb;
+    padding: 50px 60px 25px;
+    margin-top: 40px;
+}
+
+#footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto 35px auto;
+}
+
+#footer-brand .logo-text {
+    float: none;
+    margin: 0 0 12px 0;
+}
+
+#footer-brand p {
+    color: #9ca3af;
+    font-size: 13px;
+    max-width: 280px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    padding-top: 4px;
+}
+
+#footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: color 0.15s;
+}
+
+#footer-links a:hover {
+    color: #2563eb;
+}
+
+#footer-bottom {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 20px;
     text-align: center;
-    border-top: 2px solid #ccc;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#footer-bottom p {
+    color: #9ca3af;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 1px;
 }

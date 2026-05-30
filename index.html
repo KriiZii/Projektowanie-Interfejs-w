@@ -13,7 +13,7 @@
             <a href="#">Features</a>
         </div>
         <div id="search-box">
-            <input type="text" value="Search...">
+            <input type="text" id="search-input" placeholder="Search games...">
             <button>Profile</button>
         </div>
     </div>
@@ -28,19 +28,28 @@
             <div id="games-grid">
                 <!-- Javascript will put divs here -->
             </div>
+            <p id="no-results" style="display: none; color: grey; font-size: 14px; text-align: center; padding: 40px 0;">No games found for "<span id="no-results-term"></span>".</p>
         </div>
     </center>
 
     <br><br><br>
     
     <div id="bottom-footer">
-        <div class="logo-text">GameReview</div>
-        <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
-        <br>
-        <a href="#">ABOUT US</a> | 
-        <a href="#">EDITORIAL POLICY</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">CONTACT</a>
+        <div id="footer-main">
+            <div id="footer-brand">
+                <div class="logo-text">GameReview</div>
+                <p>The world's leading destination for curated game reviews and honest editorial coverage.</p>
+            </div>
+            <nav id="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="editorial.html">Editorial Policy</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id="footer-bottom">
+            <p>© 2026 GAMEREVIEW ALL RIGHTS RESERVED.</p>
+        </div>
     </div>
 
     <!-- js file -->
